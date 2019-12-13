@@ -36,6 +36,6 @@ If you're using a serial port, simply use `Serial.printf("Milliseconds since sta
 
 #### Manual Installation
 Click on the "Download ZIP" button. Extract the ZIP file, and move the extracted folder to the location "**~/Documents/Arduino/hardware**". Create the "hardware" folder if it doesn't exist.
-Open Arduino IDE and a new category in the boards menu called "MightyCoreX" will show up.
+Open Arduino IDE and a new category in the boards menu called "GraftCore" will show up.
 
 
