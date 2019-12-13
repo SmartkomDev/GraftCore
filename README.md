@@ -1,6 +1,6 @@
 # GraftCore
-An Arduino core for Graft Module. This megaAVR-0 chip family offers lots of features and peripherals at an incredible price point.
-
+An Arduino core for Graft Module.
+GraftCore is based on MegaCoreX
 # Table of contents
 
 
