@@ -1,0 +1,384 @@
+menu.clock=Clock
+menu.BOD=BOD
+menu.pinout=Version
+menu.resetpin=Reset pin
+menu.bootloader=Bootloader
+
+
+#############################
+#### Graft Input 6D2A    ####
+#############################
+
+# General
+graftinput.name=Graft Input 6D2A
+graftinput.upload.tool=avrdude
+graftinput.upload.maximum_data_size=6144
+graftinput.upload.speed=115200
+graftinput.bootloader.tool=avrdude
+graftinput.build.core=coreX-corefiles
+graftinput.build.board=AVR_ATmega4809
+graftinput.build.mcu=atmega4809
+graftinput.build.extra_flags={build.oscillator} {build.compat}
+
+# Fuses we don't need to modify in the tools menu
+graftinput.bootloader.WDTCFG=0x00
+graftinput.bootloader.TCD0CFG=0x00
+graftinput.bootloader.SYSCFG1=0x06
+graftinput.bootloader.APPEND=0x00
+graftinput.bootloader.LOCKBIT=0xC5
+
+# Pinouts
+graftinput.menu.pinout.48pin_standard=Graft Input rev:1.0
+graftinput.menu.pinout.48pin_standard.build.variant=graft-input-6D2AX-rev-10
+graftinput.menu.pinout.48pin_standard.build.compat=
+
+graftinput.menu.pinout.48pin_standard=Graft Input rev:1.1
+graftinput.menu.pinout.48pin_standard.build.variant=graft-input-6D2AX-rev-11
+graftinput.menu.pinout.48pin_standard.build.compat=
+
+graftinput.menu.pinout.48pin_standard=Graft Input rev:2.0
+graftinput.menu.pinout.48pin_standard.build.variant=graft-input-6D2AX-rev-20
+graftinput.menu.pinout.48pin_standard.build.compat=
+
+# Reset pin
+graftinput.menu.resetpin.reset=Reset
+graftinput.menu.resetpin.reset.bootloader.SYSCFG0=0xC9
+
+# Brown out detection
+graftinput.menu.BOD.2v6=BOD 2.6V
+graftinput.menu.BOD.2v6.bootloader.BODCFG=0x54
+graftinput.menu.BOD.4v2=BOD 4.2V
+graftinput.menu.BOD.4v2.bootloader.BODCFG=0xF4
+graftinput.menu.BOD.4v0=BOD 4.0V
+graftinput.menu.BOD.4v0.bootloader.BODCFG=0xD4
+graftinput.menu.BOD.3v7=BOD 3.7V
+graftinput.menu.BOD.3v7.bootloader.BODCFG=0xB4
+graftinput.menu.BOD.3v3=BOD 3.3V
+graftinput.menu.BOD.3v3.bootloader.BODCFG=0x94
+graftinput.menu.BOD.2v9=BOD 2.9V
+graftinput.menu.BOD.2v9.bootloader.BODCFG=0x74
+graftinput.menu.BOD.2v1=BOD 2.1V
+graftinput.menu.BOD.2v1.bootloader.BODCFG=0x34
+graftinput.menu.BOD.1v8=BOD 1.8V
+graftinput.menu.BOD.1v8.bootloader.BODCFG=0x14
+graftinput.menu.BOD.disabled=BOD disabled
+graftinput.menu.BOD.disabled.bootloader.BODCFG=0x00
+
+# Clock
+
+graftinput.menu.clock.internal_20MHz=Internal 20 MHz
+graftinput.menu.clock.internal_20MHz.upload.speed=115200
+graftinput.menu.clock.internal_20MHz.bootloader.OSCCFG=0x02
+graftinput.menu.clock.internal_20MHz.build.oscillator=
+graftinput.menu.clock.internal_20MHz.build.f_cpu=20000000L
+
+# Bootloader
+
+graftinput.menu.bootloader.uart1_alternative=Optiboot (UART1 alternative pins)
+graftinput.menu.bootloader.uart1_alternative.upload.maximum_size=48640
+graftinput.menu.bootloader.uart1_alternative.upload.protocol=arduino
+graftinput.menu.bootloader.uart1_alternative.upload.port=UART1_ALT
+graftinput.menu.bootloader.uart1_alternative.upload.extra_params=
+graftinput.menu.bootloader.uart1_alternative.build.text_section_start=.text=0x200
+graftinput.menu.bootloader.uart1_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A4.hex
+graftinput.menu.bootloader.uart1_alternative.bootloader.BOOTEND=0x02
+graftinput.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
+
+
+
+##############################
+#### Graft Input 8DXXX    ####
+##############################
+
+# General
+graftinput.name=Graft Input 6D2A
+graftinput.upload.tool=avrdude
+graftinput.upload.maximum_data_size=6144
+graftinput.upload.speed=115200
+graftinput.bootloader.tool=avrdude
+graftinput.build.core=coreX-corefiles
+graftinput.build.board=AVR_ATmega4809
+graftinput.build.mcu=atmega4809
+graftinput.build.extra_flags={build.oscillator} {build.compat}
+
+# Fuses we don't need to modify in the tools menu
+graftinput.bootloader.WDTCFG=0x00
+graftinput.bootloader.TCD0CFG=0x00
+graftinput.bootloader.SYSCFG1=0x06
+graftinput.bootloader.APPEND=0x00
+graftinput.bootloader.LOCKBIT=0xC5
+
+# Pinouts
+graftinput.menu.pinout.48pin_standard=Graft Input rev:1.0
+graftinput.menu.pinout.48pin_standard.build.variant=graft-input-rev-10
+graftinput.menu.pinout.48pin_standard.build.compat=
+
+# Reset pin
+graftinput.menu.resetpin.reset=Reset
+graftinput.menu.resetpin.reset.bootloader.SYSCFG0=0xC9
+
+# Brown out detection
+graftinput.menu.BOD.2v6=BOD 2.6V
+graftinput.menu.BOD.2v6.bootloader.BODCFG=0x54
+graftinput.menu.BOD.4v2=BOD 4.2V
+graftinput.menu.BOD.4v2.bootloader.BODCFG=0xF4
+graftinput.menu.BOD.4v0=BOD 4.0V
+graftinput.menu.BOD.4v0.bootloader.BODCFG=0xD4
+graftinput.menu.BOD.3v7=BOD 3.7V
+graftinput.menu.BOD.3v7.bootloader.BODCFG=0xB4
+graftinput.menu.BOD.3v3=BOD 3.3V
+graftinput.menu.BOD.3v3.bootloader.BODCFG=0x94
+graftinput.menu.BOD.2v9=BOD 2.9V
+graftinput.menu.BOD.2v9.bootloader.BODCFG=0x74
+graftinput.menu.BOD.2v1=BOD 2.1V
+graftinput.menu.BOD.2v1.bootloader.BODCFG=0x34
+graftinput.menu.BOD.1v8=BOD 1.8V
+graftinput.menu.BOD.1v8.bootloader.BODCFG=0x14
+graftinput.menu.BOD.disabled=BOD disabled
+graftinput.menu.BOD.disabled.bootloader.BODCFG=0x00
+
+# Clock
+
+graftinput.menu.clock.internal_20MHz=Internal 20 MHz
+graftinput.menu.clock.internal_20MHz.upload.speed=115200
+graftinput.menu.clock.internal_20MHz.bootloader.OSCCFG=0x02
+graftinput.menu.clock.internal_20MHz.build.oscillator=
+graftinput.menu.clock.internal_20MHz.build.f_cpu=20000000L
+
+# Bootloader
+
+graftinput.menu.bootloader.uart1_alternative=Optiboot (UART1 alternative pins)
+graftinput.menu.bootloader.uart1_alternative.upload.maximum_size=48640
+graftinput.menu.bootloader.uart1_alternative.upload.protocol=arduino
+graftinput.menu.bootloader.uart1_alternative.upload.port=UART1_ALT
+graftinput.menu.bootloader.uart1_alternative.upload.extra_params=
+graftinput.menu.bootloader.uart1_alternative.build.text_section_start=.text=0x200
+graftinput.menu.bootloader.uart1_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A4.hex
+graftinput.menu.bootloader.uart1_alternative.bootloader.BOOTEND=0x02
+graftinput.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
+
+
+####################
+#### ATmega4809 ####
+####################
+
+# General
+4809.name=General
+4809.upload.tool=avrdude
+4809.upload.maximum_data_size=6144
+4809.upload.speed=115200
+4809.bootloader.tool=avrdude
+4809.build.core=coreX-corefiles
+4809.build.board=AVR_ATmega4809
+4809.build.mcu=atmega4809
+4809.build.extra_flags={build.oscillator} {build.compat}
+
+# Fuses we don't need to modify in the tools menu
+4809.bootloader.WDTCFG=0x00
+4809.bootloader.TCD0CFG=0x00
+4809.bootloader.SYSCFG1=0x06
+4809.bootloader.APPEND=0x00
+4809.bootloader.LOCKBIT=0xC5
+
+# Pinouts
+4809.menu.pinout.48pin_standard=40/48 pin standard
+4809.menu.pinout.48pin_standard.build.variant=48pin-standard
+4809.menu.pinout.48pin_standard.build.compat=
+4809.menu.pinout.uno_wifi=Uno WiFi
+4809.menu.pinout.uno_wifi.build.variant=uno-wifi
+4809.menu.pinout.uno_wifi.build.compat=
+
+4809.menu.pinout.nano_every=Nano Every
+4809.menu.pinout.nano_every.build.variant=nano-every
+4809.menu.pinout.nano_every.upload.tool=avrdude_nanoevery
+4809.menu.pinout.nano_every.upload.use_1200bps_touch=true
+4809.menu.pinout.nano_every.upload.protocol=jtag2updi
+4809.menu.pinout.nano_every.program.extra_params=-P{serial.port} -e
+4809.menu.pinout.nano_every.build.compat=
+
+# Reset pin
+4809.menu.resetpin.reset=Reset
+4809.menu.resetpin.reset.bootloader.SYSCFG0=0xC9
+4809.menu.resetpin.gpio=GPIO
+4809.menu.resetpin.gpio.bootloader.SYSCFG0=0xC5
+
+# Brown out detection
+4809.menu.BOD.2v6=BOD 2.6V
+4809.menu.BOD.2v6.bootloader.BODCFG=0x54
+4809.menu.BOD.4v2=BOD 4.2V
+4809.menu.BOD.4v2.bootloader.BODCFG=0xF4
+4809.menu.BOD.4v0=BOD 4.0V
+4809.menu.BOD.4v0.bootloader.BODCFG=0xD4
+4809.menu.BOD.3v7=BOD 3.7V
+4809.menu.BOD.3v7.bootloader.BODCFG=0xB4
+4809.menu.BOD.3v3=BOD 3.3V
+4809.menu.BOD.3v3.bootloader.BODCFG=0x94
+4809.menu.BOD.2v9=BOD 2.9V
+4809.menu.BOD.2v9.bootloader.BODCFG=0x74
+4809.menu.BOD.2v1=BOD 2.1V
+4809.menu.BOD.2v1.bootloader.BODCFG=0x34
+4809.menu.BOD.1v8=BOD 1.8V
+4809.menu.BOD.1v8.bootloader.BODCFG=0x14
+4809.menu.BOD.disabled=BOD disabled
+4809.menu.BOD.disabled.bootloader.BODCFG=0x00
+
+# Clock
+4809.menu.clock.internal_16MHz=Internal 16 MHz
+4809.menu.clock.internal_16MHz.upload.speed=115200
+4809.menu.clock.internal_16MHz.bootloader.OSCCFG=0x01
+4809.menu.clock.internal_16MHz.build.oscillator=
+4809.menu.clock.internal_16MHz.build.f_cpu=16000000L
+
+4809.menu.clock.internal_20MHz=Internal 20 MHz
+4809.menu.clock.internal_20MHz.upload.speed=115200
+4809.menu.clock.internal_20MHz.bootloader.OSCCFG=0x02
+4809.menu.clock.internal_20MHz.build.oscillator=
+4809.menu.clock.internal_20MHz.build.f_cpu=20000000L
+
+4809.menu.clock.internal_8MHz_div=Internal 8 MHz
+4809.menu.clock.internal_8MHz_div.upload.speed=115200
+4809.menu.clock.internal_8MHz_div.bootloader.OSCCFG=0x01
+4809.menu.clock.internal_8MHz_div.build.oscillator=
+4809.menu.clock.internal_8MHz_div.build.f_cpu=8000000L
+
+4809.menu.clock.internal_4MHz_div=Internal 4 MHz
+4809.menu.clock.internal_4MHz_div.upload.speed=115200
+4809.menu.clock.internal_4MHz_div.bootloader.OSCCFG=0x01
+4809.menu.clock.internal_4MHz_div.build.oscillator=
+4809.menu.clock.internal_4MHz_div.build.f_cpu=4000000L
+
+4809.menu.clock.internal_2MHz_div=Internal 2 MHz
+4809.menu.clock.internal_2MHz_div.upload.speed=115200
+4809.menu.clock.internal_2MHz_div.bootloader.OSCCFG=0x01
+4809.menu.clock.internal_2MHz_div.build.oscillator=
+4809.menu.clock.internal_2MHz_div.build.f_cpu=2000000L
+
+4809.menu.clock.internal_1MHz_div=Internal 1 MHz
+4809.menu.clock.internal_1MHz_div.upload.speed=115200
+4809.menu.clock.internal_1MHz_div.bootloader.OSCCFG=0x01
+4809.menu.clock.internal_1MHz_div.build.oscillator=
+4809.menu.clock.internal_1MHz_div.build.f_cpu=1000000L
+
+4809.menu.clock.external_20MHz=External 20 MHz
+4809.menu.clock.external_20MHz.upload.speed=115200
+4809.menu.clock.external_20MHz.bootloader.OSCCFG=0x01
+4809.menu.clock.external_20MHz.build.oscillator=-DUSE_EXTERNAL_OSCILLATOR
+4809.menu.clock.external_20MHz.build.f_cpu=20000000L
+
+4809.menu.clock.external_16MHz=External 16 MHz
+4809.menu.clock.external_16MHz.upload.speed=115200
+4809.menu.clock.external_16MHz.bootloader.OSCCFG=0x01
+4809.menu.clock.external_16MHz.build.oscillator=-DUSE_EXTERNAL_OSCILLATOR
+4809.menu.clock.external_16MHz.build.f_cpu=16000000L
+
+4809.menu.clock.external_12MHz=External 12 MHz
+4809.menu.clock.external_12MHz.upload.speed=115200
+4809.menu.clock.external_12MHz.bootloader.OSCCFG=0x01
+4809.menu.clock.external_12MHz.build.oscillator=-DUSE_EXTERNAL_OSCILLATOR
+4809.menu.clock.external_12MHz.build.f_cpu=12000000L
+
+4809.menu.clock.external_8MHz=External 8 MHz
+4809.menu.clock.external_8MHz.upload.speed=115200
+4809.menu.clock.external_8MHz.bootloader.OSCCFG=0x01
+4809.menu.clock.external_8MHz.build.oscillator=-DUSE_EXTERNAL_OSCILLATOR
+4809.menu.clock.external_8MHz.build.f_cpu=8000000L
+
+4809.menu.clock.external_4MHz=External 4 MHz
+4809.menu.clock.external_4MHz.upload.speed=115200
+4809.menu.clock.external_4MHz.bootloader.OSCCFG=0x01
+4809.menu.clock.external_4MHz.build.oscillator=-DUSE_EXTERNAL_OSCILLATOR
+4809.menu.clock.external_4MHz.build.f_cpu=4000000L
+
+4809.menu.clock.external_1MHz=External 1 MHz
+4809.menu.clock.external_1MHz.upload.speed=115200
+4809.menu.clock.external_1MHz.bootloader.OSCCFG=0x01
+4809.menu.clock.external_1MHz.build.oscillator=-DUSE_EXTERNAL_OSCILLATOR
+4809.menu.clock.external_1MHz.build.f_cpu=1000000L
+
+# Bootloader
+4809.menu.bootloader.no_bootloader=No bootloader
+4809.menu.bootloader.no_bootloader.upload.maximum_size=49152
+4809.menu.bootloader.no_bootloader.upload.extra_params=
+4809.menu.bootloader.no_bootloader.build.text_section_start=.text=0x0
+4809.menu.bootloader.no_bootloader.bootloader.file=empty/empty.hex
+4809.menu.bootloader.no_bootloader.bootloader.BOOTEND=0x00
+
+4809.menu.bootloader.uart0_default=Optiboot (UART0 default pins)
+4809.menu.bootloader.uart0_default.upload.maximum_size=48640
+4809.menu.bootloader.uart0_default.upload.protocol=arduino
+4809.menu.bootloader.uart0_default.upload.port=UART0_DEF
+4809.menu.bootloader.uart0_default.upload.extra_params=
+4809.menu.bootloader.uart0_default.build.text_section_start=.text=0x200
+4809.menu.bootloader.uart0_default.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A7.hex
+4809.menu.bootloader.uart0_default.bootloader.BOOTEND=0x02
+4809.menu.bootloader.uart0_default.bootloader.SYSCFG0=0xC9
+
+4809.menu.bootloader.uart0_alternative=Optiboot (UART0 alternative pins)
+4809.menu.bootloader.uart0_alternative.upload.maximum_size=48640
+4809.menu.bootloader.uart0_alternative.upload.protocol=arduino
+4809.menu.bootloader.uart0_alternative.upload.port=UART0_ALT
+4809.menu.bootloader.uart0_alternative.upload.extra_params=
+4809.menu.bootloader.uart0_alternative.build.text_section_start=.text=0x200
+4809.menu.bootloader.uart0_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A7.hex
+4809.menu.bootloader.uart0_alternative.bootloader.BOOTEND=0x02
+4809.menu.bootloader.uart0_alternative.bootloader.SYSCFG0=0xC9
+
+4809.menu.bootloader.uart1_default=Optiboot (UART1 default pins)
+4809.menu.bootloader.uart1_default.upload.maximum_size=48640
+4809.menu.bootloader.uart1_default.upload.protocol=arduino
+4809.menu.bootloader.uart1_default.upload.port=UART1_DEF
+4809.menu.bootloader.uart1_default.upload.extra_params=
+4809.menu.bootloader.uart1_default.build.text_section_start=.text=0x200
+4809.menu.bootloader.uart1_default.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A7.hex
+4809.menu.bootloader.uart1_default.bootloader.BOOTEND=0x02
+4809.menu.bootloader.uart1_default.bootloader.SYSCFG0=0xC9
+
+4809.menu.bootloader.uart1_alternative=Optiboot (UART1 alternative pins)
+4809.menu.bootloader.uart1_alternative.upload.maximum_size=48640
+4809.menu.bootloader.uart1_alternative.upload.protocol=arduino
+4809.menu.bootloader.uart1_alternative.upload.port=UART1_ALT
+4809.menu.bootloader.uart1_alternative.upload.extra_params=
+4809.menu.bootloader.uart1_alternative.build.text_section_start=.text=0x200
+4809.menu.bootloader.uart1_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A4.hex
+4809.menu.bootloader.uart1_alternative.bootloader.BOOTEND=0x02
+4809.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
+
+4809.menu.bootloader.uart2_default=Optiboot (UART2 default pins)
+4809.menu.bootloader.uart2_default.upload.maximum_size=48640
+4809.menu.bootloader.uart2_default.upload.protocol=arduino
+4809.menu.bootloader.uart2_default.upload.port=UART2_DEF
+4809.menu.bootloader.uart2_default.upload.extra_params=
+4809.menu.bootloader.uart2_default.build.text_section_start=.text=0x200
+4809.menu.bootloader.uart2_default.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A7.hex
+4809.menu.bootloader.uart2_default.bootloader.BOOTEND=0x02
+4809.menu.bootloader.uart2_default.bootloader.SYSCFG0=0xC9
+
+4809.menu.bootloader.uart2_alternative=Optiboot (UART2 alternative pins)
+4809.menu.bootloader.uart2_alternative.upload.maximum_size=48640
+4809.menu.bootloader.uart2_alternative.upload.protocol=arduino
+4809.menu.bootloader.uart2_alternative.upload.port=UART2_ALT
+4809.menu.bootloader.uart2_alternative.upload.extra_params=
+4809.menu.bootloader.uart2_alternative.build.text_section_start=.text=0x200
+4809.menu.bootloader.uart2_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A7.hex
+4809.menu.bootloader.uart2_alternative.bootloader.BOOTEND=0x02
+4809.menu.bootloader.uart2_alternative.bootloader.SYSCFG0=0xC9
+
+4809.menu.bootloader.uart3_default=Optiboot (UART3 default pins)
+4809.menu.bootloader.uart3_default.upload.maximum_size=48640
+4809.menu.bootloader.uart3_default.upload.protocol=arduino
+4809.menu.bootloader.uart3_default.upload.port=UART3_DEF
+4809.menu.bootloader.uart3_default.upload.extra_params=
+4809.menu.bootloader.uart3_default.build.text_section_start=.text=0x200
+4809.menu.bootloader.uart3_default.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A7.hex
+4809.menu.bootloader.uart3_default.bootloader.BOOTEND=0x02
+4809.menu.bootloader.uart3_default.bootloader.SYSCFG0=0xC9
+
+4809.menu.bootloader.uart3_alternative=Optiboot (UART3 alternative pins)
+4809.menu.bootloader.uart3_alternative.upload.maximum_size=48640
+4809.menu.bootloader.uart3_alternative.upload.protocol=arduino
+4809.menu.bootloader.uart3_alternative.upload.port=UART3_ALT
+4809.menu.bootloader.uart3_alternative.upload.extra_params=
+4809.menu.bootloader.uart3_alternative.build.text_section_start=.text=0x200
+4809.menu.bootloader.uart3_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A7.hex
+4809.menu.bootloader.uart3_alternative.bootloader.BOOTEND=0x02
+4809.menu.bootloader.uart3_alternative.bootloader.SYSCFG0=0xC9
