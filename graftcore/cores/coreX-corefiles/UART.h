@@ -197,4 +197,7 @@ class UartClass : public HardwareSerial
   extern UartClass Serial3;
   #define HAVE_HWSERIAL3
 #endif
-
+#if defined(HWSERIAL_DEBUG)
+  extern UartClass debug;
+  #define HAVE_HWSERIAL_DEBUG
+#endif

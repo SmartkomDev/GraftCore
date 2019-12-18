@@ -34,7 +34,7 @@
 #define NUM_TOTAL_FREE_PINS            (NUM_DIGITAL_PINS)
 #define NUM_TOTAL_PINS                 (NUM_DIGITAL_PINS)
 #define ANALOG_INPUT_OFFSET            22
-#define LED_BUILTIN                    6 // PA7
+#define LED_BUILTIN                    7 // PA7
 #define digitalPinToAnalogInput(p)     ((p < NUM_ANALOG_INPUTS) ? (p) : ((p) >= 22 && (p) <= 33) ? ((p) - ANALOG_INPUT_OFFSET) : ((p) >= 36 && (p) <=39) ? ((p) - 2 - ANALOG_INPUT_OFFSET) : NOT_A_PIN)
 #define digitalOrAnalogPinToDigital(p) ((p <= 11) ? ((p) + ANALOG_INPUT_OFFSET) : ((p) <= 15) ? ((p) + ANALOG_INPUT_OFFSET + 2) : (((p) >= 22 && (p) <= 33) || ((p) >= 36 && (p) <= 39)) ? (p) :  NOT_A_PIN)
 
@@ -104,7 +104,6 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 
 // USART1
 // No pinswap by default
-/*
 #define HWSERIAL1                       (&USART1)
 #define HWSERIAL1_DRE_VECTOR            (USART1_DRE_vect)
 #define HWSERIAL1_DRE_VECTOR_NUM        (USART1_DRE_vect_num)
@@ -115,22 +114,6 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 #define PIN_WIRE_HWSERIAL1_RX           (15)
 #define PIN_WIRE_HWSERIAL1_TX_PINSWAP_1 (18)
 #define PIN_WIRE_HWSERIAL1_RX_PINSWAP_1 (19)
-*/
-
-
-// USART_DEBUG
-// No pinswap by default
-#define HWSERIAL_DEBUG                       (&USART1)
-#define HWSERIAL_DEBUG_DRE_VECTOR            (USART1_DRE_vect)
-#define HWSERIAL_DEBUG_DRE_VECTOR_NUM        (USART1_DRE_vect_num)
-#define HWSERIAL_DEBUG_RXC_VECTOR            (USART1_RXC_vect)
-#define HWSERIAL_DEBUG_MUX                   (PORTMUX_USART1_DEFAULT_gc)
-#define HWSERIAL_DEBUG_MUX_PINSWAP_1         (PORTMUX_USART1_ALT1_gc)
-#define PIN_WIRE_HWSERIAL_DEBUG_TX           (14)
-#define PIN_WIRE_HWSERIAL_DEBUG_RX           (15)
-#define PIN_WIRE_HWSERIAL_DEBUG_TX_PINSWAP_1 (18)
-#define PIN_WIRE_HWSERIAL_DEBUG_RX_PINSWAP_1 (19)
-
 
 // USART 2
 // No pinswap by default
@@ -158,31 +141,39 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 #define PIN_WIRE_HWSERIAL3_TX_PINSWAP_1 (12)
 #define PIN_WIRE_HWSERIAL3_RX_PINSWAP_1 (13)
 
-
-
-#define PIN_A0   (24)
-#define PIN_A1   (25)
-#define PIN_A2   (22)
-
-#define X1 (9)
-#define X2 (10)
-#define X3 (11)
-#define X4 (12)
-#define X5 (13)
-#define X6 (7)
-
-#define GPIO_TX (0)
-#define GPIO_RX (1)
-#define GPIO_0	(2)
-#define GPIO_1	(22)
-#define GPIO_2	(21)
-#define GPIO_3	(20)
-
+#define PIN_A0   (22)
+#define PIN_A1   (23)
+#define PIN_A2   (24)
+#define PIN_A3   (25)
+#define PIN_A4   (26)
+#define PIN_A5   (27)
+#define PIN_A6   (28)
+#define PIN_A7   (29)
+#define PIN_A8   (30)
+#define PIN_A9   (31)
+#define PIN_A10  (32)
+#define PIN_A11  (33)
+#define PIN_A12  (36)
+#define PIN_A13  (37)
+#define PIN_A14  (38)
+#define PIN_A15  (39)
 
 static const uint8_t A0  = PIN_A0;
 static const uint8_t A1  = PIN_A1;
-static const uint8_t GPIO_A0  = PIN_A2;
-
+static const uint8_t A2  = PIN_A2;
+static const uint8_t A3  = PIN_A3;
+static const uint8_t A4  = PIN_A4;
+static const uint8_t A5  = PIN_A5;
+static const uint8_t A6  = PIN_A6;
+static const uint8_t A7  = PIN_A7;
+static const uint8_t A8  = PIN_A8;
+static const uint8_t A9  = PIN_A9;
+static const uint8_t A10 = PIN_A10;
+static const uint8_t A11 = PIN_A11;
+static const uint8_t A12 = PIN_A12;
+static const uint8_t A13 = PIN_A13;
+static const uint8_t A14 = PIN_A14;
+static const uint8_t A15 = PIN_A15;
 
 #define PINS_COUNT    (41u)
 

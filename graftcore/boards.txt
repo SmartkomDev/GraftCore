@@ -5,84 +5,84 @@ menu.resetpin=Reset pin
 menu.bootloader=Bootloader
 
 
-#############################
-#### Graft Input 6D2A    ####
-#############################
+##############################
+#### Graft Input 6D2AX    ####
+##############################
 
 # General
-graftinput.name=Graft Input 6D2A
-graftinput.upload.tool=avrdude
-graftinput.upload.maximum_data_size=6144
-graftinput.upload.speed=115200
-graftinput.bootloader.tool=avrdude
-graftinput.build.core=coreX-corefiles
-graftinput.build.board=AVR_ATmega4809
-graftinput.build.mcu=atmega4809
-graftinput.build.extra_flags={build.oscillator} {build.compat}
+graftinput6d2a.name=Graft Input 6D2A
+graftinput6d2a.upload.tool=avrdude
+graftinput6d2a.upload.maximum_data_size=6144
+graftinput6d2a.upload.speed=115200
+graftinput6d2a.bootloader.tool=avrdude
+graftinput6d2a.build.core=coreX-corefiles
+graftinput6d2a.build.board=AVR_ATmega4809
+graftinput6d2a.build.mcu=atmega4809
+graftinput6d2a.build.extra_flags={build.oscillator} {build.compat}
 
 # Fuses we don't need to modify in the tools menu
-graftinput.bootloader.WDTCFG=0x00
-graftinput.bootloader.TCD0CFG=0x00
-graftinput.bootloader.SYSCFG1=0x06
-graftinput.bootloader.APPEND=0x00
-graftinput.bootloader.LOCKBIT=0xC5
+graftinput6d2a.bootloader.WDTCFG=0x00
+graftinput6d2a.bootloader.TCD0CFG=0x00
+graftinput6d2a.bootloader.SYSCFG1=0x06
+graftinput6d2a.bootloader.APPEND=0x00
+graftinput6d2a.bootloader.LOCKBIT=0xC5
 
 # Pinouts
-graftinput.menu.pinout.48pin_standard=Graft Input rev:1.0
-graftinput.menu.pinout.48pin_standard.build.variant=graft-input-6D2AX-rev-10
-graftinput.menu.pinout.48pin_standard.build.compat=
+graftinput6d2a.menu.pinout.input_ver_10=Graft Input rev:1.0
+graftinput6d2a.menu.pinout.input_ver_10.build.variant=graft-input-6D2AX-rev-10
+graftinput6d2a.menu.pinout.input_ver_10.build.compat=
 
-graftinput.menu.pinout.48pin_standard=Graft Input rev:1.1
-graftinput.menu.pinout.48pin_standard.build.variant=graft-input-6D2AX-rev-11
-graftinput.menu.pinout.48pin_standard.build.compat=
+graftinput6d2a.menu.pinout.input_ver_11=Graft Input rev:1.1
+graftinput6d2a.menu.pinout.input_ver_11.build.variant=graft-input-6D2AX-rev-11
+graftinput6d2a.menu.pinout.input_ver_11.build.compat=
 
-graftinput.menu.pinout.48pin_standard=Graft Input rev:2.0
-graftinput.menu.pinout.48pin_standard.build.variant=graft-input-6D2AX-rev-20
-graftinput.menu.pinout.48pin_standard.build.compat=
+graftinput6d2a.menu.pinout.input_ver_20=Graft Input rev:2.0
+graftinput6d2a.menu.pinout.input_ver_20.build.variant=graft-input-6D2AX-rev-20
+graftinput6d2a.menu.pinout.input_ver_20.build.compat=
 
 # Reset pin
-graftinput.menu.resetpin.reset=Reset
-graftinput.menu.resetpin.reset.bootloader.SYSCFG0=0xC9
+graftinput6d2a.menu.resetpin.reset=Reset
+graftinput6d2a.menu.resetpin.reset.bootloader.SYSCFG0=0xC9
 
 # Brown out detection
-graftinput.menu.BOD.2v6=BOD 2.6V
-graftinput.menu.BOD.2v6.bootloader.BODCFG=0x54
-graftinput.menu.BOD.4v2=BOD 4.2V
-graftinput.menu.BOD.4v2.bootloader.BODCFG=0xF4
-graftinput.menu.BOD.4v0=BOD 4.0V
-graftinput.menu.BOD.4v0.bootloader.BODCFG=0xD4
-graftinput.menu.BOD.3v7=BOD 3.7V
-graftinput.menu.BOD.3v7.bootloader.BODCFG=0xB4
-graftinput.menu.BOD.3v3=BOD 3.3V
-graftinput.menu.BOD.3v3.bootloader.BODCFG=0x94
-graftinput.menu.BOD.2v9=BOD 2.9V
-graftinput.menu.BOD.2v9.bootloader.BODCFG=0x74
-graftinput.menu.BOD.2v1=BOD 2.1V
-graftinput.menu.BOD.2v1.bootloader.BODCFG=0x34
-graftinput.menu.BOD.1v8=BOD 1.8V
-graftinput.menu.BOD.1v8.bootloader.BODCFG=0x14
-graftinput.menu.BOD.disabled=BOD disabled
-graftinput.menu.BOD.disabled.bootloader.BODCFG=0x00
+graftinput6d2a.menu.BOD.2v6=BOD 2.6V
+graftinput6d2a.menu.BOD.2v6.bootloader.BODCFG=0x54
+graftinput6d2a.menu.BOD.4v2=BOD 4.2V
+graftinput6d2a.menu.BOD.4v2.bootloader.BODCFG=0xF4
+graftinput6d2a.menu.BOD.4v0=BOD 4.0V
+graftinput6d2a.menu.BOD.4v0.bootloader.BODCFG=0xD4
+graftinput6d2a.menu.BOD.3v7=BOD 3.7V
+graftinput6d2a.menu.BOD.3v7.bootloader.BODCFG=0xB4
+graftinput6d2a.menu.BOD.3v3=BOD 3.3V
+graftinput6d2a.menu.BOD.3v3.bootloader.BODCFG=0x94
+graftinput6d2a.menu.BOD.2v9=BOD 2.9V
+graftinput6d2a.menu.BOD.2v9.bootloader.BODCFG=0x74
+graftinput6d2a.menu.BOD.2v1=BOD 2.1V
+graftinput6d2a.menu.BOD.2v1.bootloader.BODCFG=0x34
+graftinput6d2a.menu.BOD.1v8=BOD 1.8V
+graftinput6d2a.menu.BOD.1v8.bootloader.BODCFG=0x14
+graftinput6d2a.menu.BOD.disabled=BOD disabled
+graftinput6d2a.menu.BOD.disabled.bootloader.BODCFG=0x00
 
 # Clock
 
-graftinput.menu.clock.internal_20MHz=Internal 20 MHz
-graftinput.menu.clock.internal_20MHz.upload.speed=115200
-graftinput.menu.clock.internal_20MHz.bootloader.OSCCFG=0x02
-graftinput.menu.clock.internal_20MHz.build.oscillator=
-graftinput.menu.clock.internal_20MHz.build.f_cpu=20000000L
+graftinput6d2a.menu.clock.internal_20MHz=Internal 20 MHz
+graftinput6d2a.menu.clock.internal_20MHz.upload.speed=115200
+graftinput6d2a.menu.clock.internal_20MHz.bootloader.OSCCFG=0x02
+graftinput6d2a.menu.clock.internal_20MHz.build.oscillator=
+graftinput6d2a.menu.clock.internal_20MHz.build.f_cpu=20000000L
 
 # Bootloader
 
-graftinput.menu.bootloader.uart1_alternative=Optiboot (UART1 alternative pins)
-graftinput.menu.bootloader.uart1_alternative.upload.maximum_size=48640
-graftinput.menu.bootloader.uart1_alternative.upload.protocol=arduino
-graftinput.menu.bootloader.uart1_alternative.upload.port=UART1_ALT
-graftinput.menu.bootloader.uart1_alternative.upload.extra_params=
-graftinput.menu.bootloader.uart1_alternative.build.text_section_start=.text=0x200
-graftinput.menu.bootloader.uart1_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A4.hex
-graftinput.menu.bootloader.uart1_alternative.bootloader.BOOTEND=0x02
-graftinput.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
+graftinput6d2a.menu.bootloader.uart1_alternative=Optiboot (UART1 alternative pins)
+graftinput6d2a.menu.bootloader.uart1_alternative.upload.maximum_size=48640
+graftinput6d2a.menu.bootloader.uart1_alternative.upload.protocol=arduino
+graftinput6d2a.menu.bootloader.uart1_alternative.upload.port=UART1_ALT
+graftinput6d2a.menu.bootloader.uart1_alternative.upload.extra_params=
+graftinput6d2a.menu.bootloader.uart1_alternative.build.text_section_start=.text=0x200
+graftinput6d2a.menu.bootloader.uart1_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A4.hex
+graftinput6d2a.menu.bootloader.uart1_alternative.bootloader.BOOTEND=0x02
+graftinput6d2a.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
 
 
 
@@ -91,79 +91,78 @@ graftinput.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
 ##############################
 
 # General
-graftinput.name=Graft Input 6D2A
-graftinput.upload.tool=avrdude
-graftinput.upload.maximum_data_size=6144
-graftinput.upload.speed=115200
-graftinput.bootloader.tool=avrdude
-graftinput.build.core=coreX-corefiles
-graftinput.build.board=AVR_ATmega4809
-graftinput.build.mcu=atmega4809
-graftinput.build.extra_flags={build.oscillator} {build.compat}
+graftinput8d.name=Graft Input 8DXXX
+graftinput8d.upload.tool=avrdude
+graftinput8d.upload.maximum_data_size=6144
+graftinput8d.upload.speed=115200
+graftinput8d.bootloader.tool=avrdude
+graftinput8d.build.core=coreX-corefiles
+graftinput8d.build.board=AVR_ATmega4809
+graftinput8d.build.mcu=atmega4809
+graftinput8d.build.extra_flags={build.oscillator} {build.compat}
 
 # Fuses we don't need to modify in the tools menu
-graftinput.bootloader.WDTCFG=0x00
-graftinput.bootloader.TCD0CFG=0x00
-graftinput.bootloader.SYSCFG1=0x06
-graftinput.bootloader.APPEND=0x00
-graftinput.bootloader.LOCKBIT=0xC5
+graftinput8d.bootloader.WDTCFG=0x00
+graftinput8d.bootloader.TCD0CFG=0x00
+graftinput8d.bootloader.SYSCFG1=0x06
+graftinput8d.bootloader.APPEND=0x00
+graftinput8d.bootloader.LOCKBIT=0xC5
 
 # Pinouts
-graftinput.menu.pinout.48pin_standard=Graft Input rev:1.0
-graftinput.menu.pinout.48pin_standard.build.variant=graft-input-rev-10
-graftinput.menu.pinout.48pin_standard.build.compat=
+graftinput8d.menu.pinout.input_ver_20=Graft Input rev:2.0
+graftinput8d.menu.pinout.input_ver_20.build.variant=graft-input-8DXXX-rev-20
+graftinput8d.menu.pinout.input_ver_20.build.compat=
 
 # Reset pin
-graftinput.menu.resetpin.reset=Reset
-graftinput.menu.resetpin.reset.bootloader.SYSCFG0=0xC9
+graftinput8d.menu.resetpin.reset=Reset
+graftinput8d.menu.resetpin.reset.bootloader.SYSCFG0=0xC9
 
 # Brown out detection
-graftinput.menu.BOD.2v6=BOD 2.6V
-graftinput.menu.BOD.2v6.bootloader.BODCFG=0x54
-graftinput.menu.BOD.4v2=BOD 4.2V
-graftinput.menu.BOD.4v2.bootloader.BODCFG=0xF4
-graftinput.menu.BOD.4v0=BOD 4.0V
-graftinput.menu.BOD.4v0.bootloader.BODCFG=0xD4
-graftinput.menu.BOD.3v7=BOD 3.7V
-graftinput.menu.BOD.3v7.bootloader.BODCFG=0xB4
-graftinput.menu.BOD.3v3=BOD 3.3V
-graftinput.menu.BOD.3v3.bootloader.BODCFG=0x94
-graftinput.menu.BOD.2v9=BOD 2.9V
-graftinput.menu.BOD.2v9.bootloader.BODCFG=0x74
-graftinput.menu.BOD.2v1=BOD 2.1V
-graftinput.menu.BOD.2v1.bootloader.BODCFG=0x34
-graftinput.menu.BOD.1v8=BOD 1.8V
-graftinput.menu.BOD.1v8.bootloader.BODCFG=0x14
-graftinput.menu.BOD.disabled=BOD disabled
-graftinput.menu.BOD.disabled.bootloader.BODCFG=0x00
+graftinput8d.menu.BOD.2v6=BOD 2.6V
+graftinput8d.menu.BOD.2v6.bootloader.BODCFG=0x54
+graftinput8d.menu.BOD.4v2=BOD 4.2V
+graftinput8d.menu.BOD.4v2.bootloader.BODCFG=0xF4
+graftinput8d.menu.BOD.4v0=BOD 4.0V
+graftinput8d.menu.BOD.4v0.bootloader.BODCFG=0xD4
+graftinput8d.menu.BOD.3v7=BOD 3.7V
+graftinput8d.menu.BOD.3v7.bootloader.BODCFG=0xB4
+graftinput8d.menu.BOD.3v3=BOD 3.3V
+graftinput8d.menu.BOD.3v3.bootloader.BODCFG=0x94
+graftinput8d.menu.BOD.2v9=BOD 2.9V
+graftinput8d.menu.BOD.2v9.bootloader.BODCFG=0x74
+graftinput8d.menu.BOD.2v1=BOD 2.1V
+graftinput8d.menu.BOD.2v1.bootloader.BODCFG=0x34
+graftinput8d.menu.BOD.1v8=BOD 1.8V
+graftinput8d.menu.BOD.1v8.bootloader.BODCFG=0x14
+graftinput8d.menu.BOD.disabled=BOD disabled
+graftinput8d.menu.BOD.disabled.bootloader.BODCFG=0x00
 
 # Clock
 
-graftinput.menu.clock.internal_20MHz=Internal 20 MHz
-graftinput.menu.clock.internal_20MHz.upload.speed=115200
-graftinput.menu.clock.internal_20MHz.bootloader.OSCCFG=0x02
-graftinput.menu.clock.internal_20MHz.build.oscillator=
-graftinput.menu.clock.internal_20MHz.build.f_cpu=20000000L
+graftinput8d.menu.clock.internal_20MHz=Internal 20 MHz
+graftinput8d.menu.clock.internal_20MHz.upload.speed=115200
+graftinput8d.menu.clock.internal_20MHz.bootloader.OSCCFG=0x02
+graftinput8d.menu.clock.internal_20MHz.build.oscillator=
+graftinput8d.menu.clock.internal_20MHz.build.f_cpu=20000000L
 
 # Bootloader
 
-graftinput.menu.bootloader.uart1_alternative=Optiboot (UART1 alternative pins)
-graftinput.menu.bootloader.uart1_alternative.upload.maximum_size=48640
-graftinput.menu.bootloader.uart1_alternative.upload.protocol=arduino
-graftinput.menu.bootloader.uart1_alternative.upload.port=UART1_ALT
-graftinput.menu.bootloader.uart1_alternative.upload.extra_params=
-graftinput.menu.bootloader.uart1_alternative.build.text_section_start=.text=0x200
-graftinput.menu.bootloader.uart1_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A4.hex
-graftinput.menu.bootloader.uart1_alternative.bootloader.BOOTEND=0x02
-graftinput.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
+graftinput8d.menu.bootloader.uart1_alternative=Optiboot (UART1 alternative pins)
+graftinput8d.menu.bootloader.uart1_alternative.upload.maximum_size=48640
+graftinput8d.menu.bootloader.uart1_alternative.upload.protocol=arduino
+graftinput8d.menu.bootloader.uart1_alternative.upload.port=UART1_ALT
+graftinput8d.menu.bootloader.uart1_alternative.upload.extra_params=
+graftinput8d.menu.bootloader.uart1_alternative.build.text_section_start=.text=0x200
+graftinput8d.menu.bootloader.uart1_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A4.hex
+graftinput8d.menu.bootloader.uart1_alternative.bootloader.BOOTEND=0x02
+graftinput8d.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
 
-
-####################
-#### ATmega4809 ####
-####################
+#######################
+#### Graft general ####
+#######################
 
 # General
-4809.name=General
+4809.name=Graft general
 4809.upload.tool=avrdude
 4809.upload.maximum_data_size=6144
 4809.upload.speed=115200
@@ -181,20 +180,9 @@ graftinput.menu.bootloader.uart1_alternative.bootloader.SYSCFG0=0xC9
 4809.bootloader.LOCKBIT=0xC5
 
 # Pinouts
-4809.menu.pinout.48pin_standard=40/48 pin standard
-4809.menu.pinout.48pin_standard.build.variant=48pin-standard
+4809.menu.pinout.48pin_standard=Graft general
+4809.menu.pinout.48pin_standard.build.variant=graft-general
 4809.menu.pinout.48pin_standard.build.compat=
-4809.menu.pinout.uno_wifi=Uno WiFi
-4809.menu.pinout.uno_wifi.build.variant=uno-wifi
-4809.menu.pinout.uno_wifi.build.compat=
-
-4809.menu.pinout.nano_every=Nano Every
-4809.menu.pinout.nano_every.build.variant=nano-every
-4809.menu.pinout.nano_every.upload.tool=avrdude_nanoevery
-4809.menu.pinout.nano_every.upload.use_1200bps_touch=true
-4809.menu.pinout.nano_every.upload.protocol=jtag2updi
-4809.menu.pinout.nano_every.program.extra_params=-P{serial.port} -e
-4809.menu.pinout.nano_every.build.compat=
 
 # Reset pin
 4809.menu.resetpin.reset=Reset

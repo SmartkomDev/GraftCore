@@ -33,7 +33,7 @@
 
 // this next line disables the entire UART.cpp,
 // this is so I can support Attiny series and any other chip without a uart
-#if defined(HAVE_HWSERIAL0) || defined(HAVE_HWSERIAL1) || defined(HAVE_HWSERIAL2) || defined(HAVE_HWSERIAL3)
+#if defined(HAVE_HWSERIAL0) || defined(HAVE_HWSERIAL1) || defined(HAVE_HWSERIAL2) || defined(HAVE_HWSERIAL3)|| defined(HAVE_HWSERIAL_DEBUG)
 
 // SerialEvent functions are weak, so when the user doesn't define them,
 // the linker just sets their address to 0 (which is checked below).
@@ -60,6 +60,11 @@ void serialEvent3() __attribute__((weak));
 bool Serial3_available() __attribute__((weak));
 #endif
 
+#if defined(HAVE_HWSERIAL_DEBUG)
+void serialEventDebug() __attribute__((weak));
+bool Debug_available() __attribute__((weak));
+#endif
+
 void serialEventRun(void)
 {
 #if defined(HAVE_HWSERIAL0)
@@ -73,6 +78,9 @@ void serialEventRun(void)
 #endif
 #if defined(HAVE_HWSERIAL3)
     if (Serial3_available && serialEvent3 && Serial3_available()) serialEvent3();
+#endif
+#if defined(HAVE_HWSERIAL_DEBUG)
+    if (Debug_available && serialEventDebug && Debug_available()) serialEventDebug();
 #endif
 }
 

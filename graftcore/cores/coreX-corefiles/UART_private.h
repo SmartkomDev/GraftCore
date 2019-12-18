@@ -25,7 +25,7 @@
 
 // this next line disables the entire UART.cpp, 
 // this is so I can support Attiny series and any other chip without a uart
-#if defined(HAVE_HWSERIAL0) || defined(HAVE_HWSERIAL1) || defined(HAVE_HWSERIAL2) || defined(HAVE_HWSERIAL3)
+#if defined(HAVE_HWSERIAL0) || defined(HAVE_HWSERIAL1) || defined(HAVE_HWSERIAL2) || defined(HAVE_HWSERIAL3)|| defined(HAVE_HWSERIAL_DEBUG)
 
 // Constructors ////////////////////////////////////////////////////////////////
 
