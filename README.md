@@ -6,18 +6,18 @@ GraftCore is based on MegaCoreX
 
 ## Supported Graft Module
 
-| Graft            | Graft Input                | Graft Output                      |
-|------------------|----------------------------|-----------------------------------|
-| **Flash**        | 48 kB                      | 48 kB                             |
-| **RAM**          | 6 kB                       | 6 kB                              |
-| **EEPROM**       | 256 B                      | 256 B                             |
-| **Serial ports** | 2                          | 2                                 |
-| **IO pins**      | 8D/6D2A                    | 8D/2RL/4RL                        |
-| **SMCI bus**     | Yes                        | Yes                               |
-| **Interrupt**    |                            |                                   |
-| **PWM Output**   |                            |                                   |
-|**Logic(CCL)**    |                            |                                   |
-|**Comparator(AC)**|                            |                                   |
+| Graft            | Graft Input                | Graft Output                      |Gaft Uno                     |
+|------------------|----------------------------|-----------------------------------|-----------------------------|
+| **Flash**        | 48 kB                      | 48 kB                             | 48 kB                       |
+| **RAM**          | 6 kB                       | 6 kB                              | 6 kB                        |
+| **EEPROM**       | 256 B                      | 256 B                             | 256 B                       |
+| **Serial ports** | 2                          | 2                                 | 2                           |
+| **IO pins**      | 8D/6D2A                    | 8D/2RL/4RL                        | 25                          |
+| **SMCI bus**     | Yes                        | Yes                               | Yes                         |
+| **Interrupt**    |                            |                                   |                             |
+| **PWM Output**   |                            |                                   |                             |
+|**Logic(CCL)**    |                            |                                   |                             |
+|**Comparator(AC)**|                            |                                   |                             |
 
 
 ### Programming
