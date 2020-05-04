@@ -1,4 +1,4 @@
-# GraftCore
+# GraftCoreX
 An Arduino core for Graft Module.
 GraftCore is based on MegaCoreX
 # Table of contents
