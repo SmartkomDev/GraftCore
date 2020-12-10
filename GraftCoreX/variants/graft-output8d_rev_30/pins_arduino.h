@@ -1,5 +1,5 @@
 /****************************************************|
-|               48-PIN STANDARD PINOUT               |
+|               GRAFT-OUTPUT-PIN STANDARD PINOUT               |
 |       https://github.com/MCUdude/MegaCoreX         |
 |                                                    |
 | COMPATIBLE WITH:                                   |
@@ -23,7 +23,7 @@
 #include <avr/pgmspace.h>
 #include "timers.h"
 
-#define DEFAULT_48PIN_PINOUT
+#define DEFAULT_GRAFT_OUTPUT_PINOUT
 
 #define NUM_DIGITAL_PINS               41
 #define NUM_ANALOG_INPUTS              16
@@ -37,7 +37,7 @@
 #define LED_BUILTIN                    7 // PA7
 #define digitalPinToAnalogInput(p)     ((p < NUM_ANALOG_INPUTS) ? (p) : ((p) >= 22 && (p) <= 33) ? ((p) - ANALOG_INPUT_OFFSET) : ((p) >= 36 && (p) <=39) ? ((p) - 2 - ANALOG_INPUT_OFFSET) : NOT_A_PIN)
 #define digitalOrAnalogPinToDigital(p) ((p <= 11) ? ((p) + ANALOG_INPUT_OFFSET) : ((p) <= 15) ? ((p) + ANALOG_INPUT_OFFSET + 2) : (((p) >= 22 && (p) <= 33) || ((p) >= 36 && (p) <= 39)) ? (p) :  NOT_A_PIN)
-#define MILLIS_USE_TIMERB2
+
 #if !defined(MILLIS_USE_TIMERB0) || !defined(MILLIS_USE_TIMERB1) || !defined(MILLIS_USE_TIMERB2) || !defined(MILLIS_USE_TIMERB3)
 #define MILLIS_USE_TIMERB2 // Use TCB2 for millis generation
 #endif
@@ -147,6 +147,28 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 #define PIN_WIRE_HWSERIAL3_RX           (9)
 #define PIN_WIRE_HWSERIAL3_TX_PINSWAP_1 (12)
 #define PIN_WIRE_HWSERIAL3_RX_PINSWAP_1 (13)
+
+#define GPIOINT1 34
+#define GPIOINT2 35
+#define GPIO_SPI_CS_OUT 36
+#define GPIO_SPI_CS_IN 33
+
+#define Y1 8
+#define Y2 9
+#define Y3 10
+#define Y4 11
+#define Y5 12
+#define Y6 13
+#define Y7 14
+#define Y8 15
+
+#define GPIOTX 0
+#define GPIORX 1
+
+#define GPIO0 2
+#define GPIO1 22
+#define GPIO2 23
+#define GPIO3 24
 
 #define PIN_A0   (22)
 #define PIN_A1   (23)
